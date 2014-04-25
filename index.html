@@ -22,11 +22,16 @@
 	<script src="lib/gameobjects/components/collide.js"></script>
 	<script src="lib/gameobjects/components/keyboardcontrol.js"></script>
 	<script src="lib/gameobjects/components/position.js"></script>
+	<script src="lib/gameobjects/components/weapon.js"></script>
+	<script src="lib/gameobjects/components/canfight.js"></script>
+	<script src="lib/gameobjects/components/behaviour.js"></script>
 	<script src="lib/gameobjects/systems/render.js"></script>
 	<script src="lib/gameobjects/systems/open.js"></script>
 	<script src="lib/gameobjects/systems/lightmap.js"></script>
 	<script src="lib/gameobjects/systems/control.js"></script>
-	<script src="lib/gameobjects/systems/collision.js"></script>
+	<script src="lib/gameobjects/systems/movement.js"></script>
+	<script src="lib/gameobjects/systems/combat.js"></script>
+	<script src="lib/gameobjects/systems/pathfinding.js"></script>
 	<script src="lib/factories/playerfactory.js"></script>
 	<script src="lib/factories/enemyfactory.js"></script>
 	<script src="lib/factories/propfactory.js"></script>
@@ -38,6 +43,7 @@
 	<script src="lib/tilemap/map.js"></script>
 	<script src="lib/tilemap/mapfactory.js"></script>
 	<script src="lib/tilemap/room.js"></script>
+	<script src="lib/libraries/easystar.js"></script>
 	<script src="lib/init.js"></script>
 
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -45,8 +51,9 @@
 <body>
 	<canvas id="canvas"></canvas>
 	<div class="hidden">
-		<img id="player" src="assets/sprites/player.png"/>
+		<img id="entities" src="assets/sprites/entities.png"/>
 		<img id="tileset" src="assets/tilesets/dungeon.png"/>
+		<img id="decoration" src="assets/tilesets/decoration.png"/>
 	</div>
 </body>
 </html>
