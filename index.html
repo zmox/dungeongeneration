@@ -9,7 +9,6 @@
 
 	<script src="lib/roguelike.js"></script>
 	<script src="lib/core/game.js"></script>
-	<script src="lib/core/utils.js"></script>
 	<script src="lib/core/camera.js"></script>
 	<script src="lib/geometry/vector2.js"></script>
 	<script src="lib/geometry/boundary.js"></script>
@@ -20,18 +19,19 @@
 	<script src="lib/gameobjects/components/canopen.js"></script>
 	<script src="lib/gameobjects/components/lightsource.js"></script>
 	<script src="lib/gameobjects/components/collide.js"></script>
+	<script src="lib/gameobjects/components/tooltip.js"></script>
 	<script src="lib/gameobjects/components/keyboardcontrol.js"></script>
 	<script src="lib/gameobjects/components/position.js"></script>
 	<script src="lib/gameobjects/components/weapon.js"></script>
 	<script src="lib/gameobjects/components/canfight.js"></script>
-	<script src="lib/gameobjects/components/behaviour.js"></script>
+	<script src="lib/gameobjects/components/movement.js"></script>
 	<script src="lib/gameobjects/systems/render.js"></script>
 	<script src="lib/gameobjects/systems/open.js"></script>
 	<script src="lib/gameobjects/systems/lightmap.js"></script>
-	<script src="lib/gameobjects/systems/control.js"></script>
 	<script src="lib/gameobjects/systems/movement.js"></script>
 	<script src="lib/gameobjects/systems/combat.js"></script>
 	<script src="lib/gameobjects/systems/pathfinding.js"></script>
+	<script src="lib/gameobjects/behaviours/moveBehaviours.js"></script>
 	<script src="lib/factories/playerfactory.js"></script>
 	<script src="lib/factories/enemyfactory.js"></script>
 	<script src="lib/factories/propfactory.js"></script>
@@ -39,11 +39,16 @@
 	<script src="lib/input/event.js"></script>
 	<script src="lib/input/key.js"></script>
 	<script src="lib/input/keyboard.js"></script>
+	<script src="lib/time/queue.js"></script>
+	<script src="lib/time/scheduler.js"></script>
 	<script src="lib/tilemap/tile.js"></script>
 	<script src="lib/tilemap/map.js"></script>
 	<script src="lib/tilemap/mapfactory.js"></script>
+	<script src="lib/tilemap/mapdecorator.js"></script>
 	<script src="lib/tilemap/room.js"></script>
 	<script src="lib/libraries/easystar.js"></script>
+	<script src="lib/libraries/mersennetwister.js"></script>
+	<script src="lib/core/utils.js"></script>
 	<script src="lib/init.js"></script>
 
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -54,6 +59,7 @@
 		<img id="entities" src="assets/sprites/entities.png"/>
 		<img id="tileset" src="assets/tilesets/dungeon.png"/>
 		<img id="decoration" src="assets/tilesets/decoration.png"/>
+		<img id="ui" src="assets/tilesets/ui.png"/>
 	</div>
 </body>
 </html>
